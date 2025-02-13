@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Gerador de CNPJ";
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+    <form method="post" asp-action="Generate">
+        <button type="submit" class="btn btn-primary">Gerar CNPJ</button>
+    </form>
+
+    @if (ViewBag.GeneratedCnpj != null)
+    {
+        <div class="alert alert-success mt-3">
+            <strong>CNPJ Gerado:</strong> @ViewBag.GeneratedCnpj
+        </div>
+    }
+</div>

@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Gerador de CPF";
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+    <form method="post" asp-action="Generate">
+        <button type="submit" class="btn btn-primary">Gerar CPF</button>
+    </form>
+
+    @if (ViewBag.GeneratedCpf != null)
+    {
+        <div class="alert alert-success mt-3">
+            <strong>CPF Gerado:</strong> @ViewBag.GeneratedCpf
+        </div>
+    }
+</div>

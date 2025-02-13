@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Gerador de QR Code";
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+
+    <form method="post" asp-action="Generate">
+        <div class="mb-3">
+            <label for="text" class="form-label">Texto para QR Code:</label>
+            <input type="text" id="text" name="text" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Gerar QR Code</button>
+    </form>
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger mt-3">@ViewBag.Error</div>
+    }
+
+    @if (ViewBag.QrCodeImage != null)
+    {
+        <div class="mt-4">
+            <h3>QR Code Gerado:</h3>
+            <img src="@ViewBag.QrCodeImage" alt="QR Code" class="img-fluid border p-2">
+
+            <div class="mt-3">
+                <a href="@Url.Action("DownloadQrCode", "QrCodeGenerator", new { text = Context.Request.Form["text"] })" 
+                   class="btn btn-success">
+                    Baixar QR Code
+                </a>
+            </div>
+        </div>
+    }
+</div>
