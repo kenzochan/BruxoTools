@@ -7,11 +7,21 @@
         body {
             background-image: url('https:'); /* Define a imagem de background */
             background-size: cover; /* Ajusta a imagem para cobrir toda a área */
-            background-repeat: no-repeat; /* Evita que a imagem se repita */            
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Garante que o body ocupe toda a altura da janela */
         }
-        .container{
-            text-align: center;     
-            display:flex;
+        .container {
+            text-align: center;
+            align
+            flex: 1; /* Faz com que o container ocupe o espaço disponível */
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #f1f1f1; /* Cor de fundo para destacar o footer */
         }
     </style>
 </head>
@@ -20,9 +30,7 @@
         <h1>BruxoTools</h1>
         <p>Ferramentas úteis para devs!</p>
         <h2><--Verifique o painel ao lado esquerdo!<--</h2>
-
-        <footer>Made by Daniel Kenzo Takagi</footer>
     </div>
+    <footer>Made by Daniel Kenzo Takagi</footer>
 </body>
-
 </html>

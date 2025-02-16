@@ -28,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3BmR2VuZXJhdG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/danie/Study/Dotnet/BruxoTools/Views/CurrencyConverter/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVuY3lDb252ZXJ0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/danie/Study/Dotnet/BruxoTools/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/danie/Study/Dotnet/BruxoTools/Views/RandomNumber/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZG9tTnVtYmVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/danie/Study/Dotnet/BruxoTools/Views/RegraDeTres/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVncmFEZVRyZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/danie/Study/Dotnet/BruxoTools/Views/Shared/Error.cshtml]

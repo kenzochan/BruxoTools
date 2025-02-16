@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Conversor de Moedas";
+}
+
+<div class="container mt-4">
+    <h2>Conversor de Moedas</h2>
+    <p>Digite os valores abaixo para converter moedas em tempo real.</p>
+
+    <form method="post" asp-controller="CurrencyConverter" asp-action="ConvertCurrency">
+        <div class="mb-3">
+            <label for="fromCurrency" class="form-label">Moeda de Origem</label>
+            <select class="form-control" id="fromCurrency" name="fromCurrency" required>
+                <option value="BRL">Real Brasileiro (BRL)</option>
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="JPY">Iene Japonês (JPY)</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="toCurrency" class="form-label">Moeda de Destino</label>
+            <select class="form-control" id="toCurrency" name="toCurrency" required>
+                <option value="BRL">Real Brasileiro (BRL)</option>
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="JPY">Iene Japonês (JPY)</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="amount" class="form-label">Valor</label>
+            <input type="number" step="0.01" class="form-control" id="amount" name="amount" placeholder="Digite o valor" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Converter</button>
+    </form>
+
+    @if (!string.IsNullOrEmpty(ViewBag.ConvertedAmount))
+    {
+        <div class="alert alert-success mt-4">
+            <strong>Resultado:</strong> @ViewBag.ConvertedAmount
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(ViewBag.Error))
+    {
+        <div class="alert alert-danger mt-4">
+            <strong>Erro:</strong> @ViewBag.Error
+        </div>
+    }
+</div>
