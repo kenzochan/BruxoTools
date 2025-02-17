@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BruxoTools")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f73905c6a40e54e9d2e5a991de229b61bc5528da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d1fa8f1a510470f0f076afae227b12fb6e3dc66")]
 [assembly: System.Reflection.AssemblyProductAttribute("BruxoTools")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BruxoTools")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

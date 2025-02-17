@@ -1,0 +1,35 @@
+# Ignore the publish folder
+publish/
+
+# Ignore the deploy folder
+deploy/
+
+# Ignore a specific zip file
+deploy.zip
+
+
+# Ignore the bin and obj folders, including the specific version folders
+bin/
+obj/
+bin/Debug/net9.0/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore .NET build files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore Rider project files
+.idea/
+
+# Ignore Visual Studio Code files
+.vscode/
+
+# Ignore node_modules folder (if using Node.js)
+node_modules/
+
+# Ignore npm-debug.log
+npm-debug.log
